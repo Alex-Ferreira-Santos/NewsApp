@@ -44,8 +44,7 @@ export default class MyList extends Component {
     }
 
     isCloseToBottom({ layoutMeasurement, contentOffset, contentSize }) {   
-        return layoutMeasurement.height + contentOffset.y 
-        >= contentSize.height - 50; 
+        return layoutMeasurement.height + contentOffset.y >= contentSize.height - 50; 
     }
 
     renderList = () => {
@@ -60,16 +59,16 @@ export default class MyList extends Component {
              </TouchableOpacity>);
             })
        );
-      }
+    }
 
     render() {
         return (
-          <ScrollView onScroll={({ nativeEvent }) => {
-            if (this.isCloseToBottom(nativeEvent) && this.state.hasMore) {                
-                 this.getListOfData(); }}}> 
-            {this.renderList()} 
-          </ScrollView>
-          );
+            <ScrollView onScroll={({ nativeEvent }) => {
+                if (this.isCloseToBottom(nativeEvent) && this.state.hasMore) {                
+                    this.getListOfData(); }}}>  
+                {this.renderList()}
+            </ScrollView>
+        );
     }
 }
 
