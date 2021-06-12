@@ -1,0 +1,53 @@
+Problema 1:
+
+O app não inicia por causa do require das imagens
+
+Resultado esperado:
+
+exibição do app e das imagens normalmente
+
+Correção:
+
+require individual nos dados do array
+
+=======================================================
+
+Problema 2:
+
+a função ComponentWillMount está depreciada e chama uma função inexistente impedindo a inicialização do componente
+
+Resultado esperado:
+
+chamar a função correta e inicializar o componente
+
+correção:
+
+Trocado o nome da função de ComponentWillMount para ComponentDidMount e modificado a função chamada
+
+=======================================================
+
+Problema 3:
+
+a importação do componente MyList está errado no arquivo App.js
+
+Resultado esperado:
+
+chamar o componente de maneira correta e renderizar ele
+
+Correção:
+
+removido as chaves da importação do componente
+
+=======================================================
+
+Problema 4:
+
+Imagens grandes demais
+
+Resultado esperado:
+
+Imagens de um tamanho normal para o usuário poder visualizar as informações
+
+Correção:
+
+Modificado o tamanho das imagens para ter ganho de performance e melhor visualização
